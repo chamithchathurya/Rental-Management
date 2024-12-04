@@ -13,14 +13,11 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 
+@Table(name="rentalDeatails")
 @Entity
-@Table(name="item")
-public class ItemEntity {
+public class RentalDetailsEntity {
     @Id
-    private Integer id;
-    private String name;
-    private String rentalPreDay;
-    private String finePerDay;
-    private String availability;
-    
+    private Integer Id;
+    private Double totalItemCost;
+    private Integer Quantity;
 }

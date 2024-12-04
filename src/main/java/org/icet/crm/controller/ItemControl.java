@@ -13,7 +13,7 @@ import java.util.List;
 public class ItemControl {
     final ItemService service;
    @PostMapping("/add-item")
-    void addItem(Item item){
+    void addItem(@RequestBody Item item){
         service.addItem(item);
     }
     @GetMapping("/get-items")

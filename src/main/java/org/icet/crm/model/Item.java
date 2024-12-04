@@ -11,6 +11,6 @@ public class Item {
     private String name;
     private String rentalPreDay;
     private String finePerDay;
-    private boolean availability;
+    private String availability;
     
 }
