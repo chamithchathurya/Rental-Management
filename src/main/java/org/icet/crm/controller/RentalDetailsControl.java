@@ -21,7 +21,7 @@ public class RentalDetailsControl {
     void deleteItem(@PathVariable Integer id){
         service.deleteItem(id);
     }
-    @PatchMapping("/get-rental-details")
+    @PatchMapping("/add-rental-details")
     public void addRentalDetails(@RequestBody RentalDetails details){
         service.addRentalDetail(details);
     }
