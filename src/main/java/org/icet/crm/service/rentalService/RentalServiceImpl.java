@@ -42,8 +42,9 @@ public class RentalServiceImpl implements RentalService{
     }
 
     @Override
-    public void editRental(Rental rental) {
-        repository.save(modelMapper.map(rental, RentalEntity.class));
-
+    public void editRental(Integer id) {
+        repository.findById(id);
     }
+
+
 }

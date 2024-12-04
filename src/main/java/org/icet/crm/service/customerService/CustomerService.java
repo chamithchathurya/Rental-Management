@@ -9,5 +9,5 @@ public interface CustomerService {
     List<Customer>getAllCustomer();
     void deleteCustomer(Integer id);
     List<Customer>searchById(Integer id);
-    void editCustomer(Integer id);
+    List<Customer> editCustomer(Integer id);
 }

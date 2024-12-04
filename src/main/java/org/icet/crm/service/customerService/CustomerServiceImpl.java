@@ -33,6 +33,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public void deleteCustomer(Integer id) {
         repository.deleteById(id);
+
     }
 
     @Override
@@ -43,8 +44,10 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public void editCustomer(Integer id) {
-        repository.findById(id);
+    public List<Customer> editCustomer(Integer id) {
+        List<Customer>customerList=new ArrayList<>();
+        repository.searchById(id).forEach(customer ->customerList.add(modelMapper.map(customer,Customer.class)));
+        return customerList;
     }
 
 

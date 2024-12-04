@@ -28,11 +28,12 @@ public class CustomerControl {
         service.deleteCustomer(id);
     }
     @PutMapping("/edit-by-id/{id}")
-    public void updateCustomer(@PathVariable Integer id){
-        service.editCustomer(id);
+    public List<Customer> updateCustomer(@PathVariable Integer id){
+        return service.editCustomer(id);
     }
     @GetMapping("/search-by-id/{id}")
     public List<Customer> searchById(@PathVariable Integer id){
         return service.searchById(id);
     }
+
 }

@@ -26,9 +26,9 @@ public class RentalControl {
     public void deleteRental(@PathVariable Integer id){
         service.deleteRental(id);
     }
-    @PutMapping("/edit-rental")
-    public void updateRental(@RequestBody Rental rental){
-        service.editRental(rental);
+    @PatchMapping("/edit-rental/{id}")
+    public void updateRental(@PathVariable Integer id){
+        service.editRental(id);
     }
     @GetMapping("/search-rental/{id}")
     public List<Rental> searchById(@PathVariable Integer id){
