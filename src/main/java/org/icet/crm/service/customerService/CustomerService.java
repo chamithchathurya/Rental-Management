@@ -1,4 +1,4 @@
-package org.icet.crm.service;
+package org.icet.crm.service.customerService;
 
 import org.icet.crm.model.Customer;
 

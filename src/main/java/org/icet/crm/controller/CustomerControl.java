@@ -2,8 +2,7 @@ package org.icet.crm.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.icet.crm.model.Customer;
-import org.icet.crm.service.CustomerService;
-import org.springframework.data.repository.ListCrudRepository;
+import org.icet.crm.service.customerService.CustomerService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
